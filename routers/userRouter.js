@@ -11,6 +11,7 @@ class UserRouter {
     router.get("/", this.checkJwt, this.controller.getAll);
     router.get("/:id", this.checkJwt, this.controller.getOne);
     router.post("/", this.controller.signUp);
+    router.post("/verify/:id", this.controller.sendVerificationEmail);
     router.put("/:id", this.checkJwt, this.controller.updateProfile);
     return router;
   };

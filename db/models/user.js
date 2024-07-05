@@ -11,35 +11,38 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         type: DataTypes.STRING,
       },
-      first_name: {
+      firstName: {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      last_name: {
+      lastName: {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      company_name: {
+      companyName: {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      profile_pic_url: {
+      profilePicUrl: {
         type: DataTypes.TEXT,
       },
-      contact_no: {
+      contactNo: {
         allowNull: false,
         type: DataTypes.INTEGER,
       },
-      job_title: {
+      jobTitle: {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      job_role: {
+      jobRole: {
         allowNull: false,
         type: DataTypes.STRING,
       },
       industry: {
         allowNull: false,
+        type: DataTypes.STRING,
+      },
+      auth0UserId: {
         type: DataTypes.STRING,
       },
     },
